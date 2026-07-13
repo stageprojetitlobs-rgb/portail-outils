@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portail Lobs</title>
+<style>
+  :root {
+    color-scheme: light dark;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    height: 100%;
+  }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #f4f5f7;
+    color: #1a1a1a;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { background: #14161a; color: #e8e8e8; }
+  }
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  img.logo {
+    width: 68px;
+    height: auto;
+    flex-shrink: 0;
+  }
+  h1 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: 0.02em;
+    line-height: 1;
+    white-space: nowrap;
+  }
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    justify-content: center;
+    max-width: 720px;
+    padding: 0 1rem;
+  }
+  a.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 220px;
+    padding: 1.6rem 1.5rem;
+    border-radius: 14px;
+    background: #ffffff;
+    color: #1a1a1a;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.06);
+    transition: transform 0.12s ease, box-shadow 0.12s ease;
+  }
+  a.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+  }
+  @media (prefers-color-scheme: dark) {
+    a.btn {
+      background: #1f2228;
+      color: #f0f0f0;
+      border-color: rgba(255,255,255,0.08);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    }
+    a.btn:hover { box-shadow: 0 6px 16px rgba(0,0,0,0.4); }
+  }
+</style>
+</head>
+<body>
+  <div class="brand">
+    <img class="logo" src="lobs_icon.png" alt="Lobs">
+    <h1>Outils Lobs — Stage</h1>
+  </div>
+  <div class="grid">
+    <a class="btn" href="https://stageprojetitlobs-rgb.github.io/veille-concu-AMM/" target="_blank" rel="noopener">Veille AMM</a>
+    <a class="btn" href="https://stageprojetitlobs-rgb.github.io/veille-ao-lobs/" target="_blank" rel="noopener">Appel d'offre</a>
+  </div>
+</body>
+</html>
